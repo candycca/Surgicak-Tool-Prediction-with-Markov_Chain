@@ -4,7 +4,7 @@
 __pycache__/
 results/
 visualized/
-*dataset/
+markov_dataset/
 test/
 .vscode/
 *.log
