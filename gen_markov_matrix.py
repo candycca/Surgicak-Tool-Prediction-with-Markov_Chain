@@ -122,9 +122,9 @@ def visualize_markov_matrix(zero_matrix, first_order_matrix, second_order_matrix
 
 def main():
     parser = ArgumentParser()
-    parser.add_argument("--input_dir", default="./dataset/GT/train", help="Path to the video file")
-    parser.add_argument("--output_dir", default="./results/GT_markov_matrices", help="Output directory for batch processing")
-    parser.add_argument("--vis_dir", default="./visualized/GT_markov_matrices", help="Path to the YOLO model")
+    parser.add_argument("--input_dir", default="./dataset/train", help="Path to the video file")
+    parser.add_argument("--output_dir", default="./results/markov_matrices", help="Output directory for batch processing")
+    parser.add_argument("--vis_dir", default="./visualized/markov_matrices", help="Path to the YOLO model")
     args = parser.parse_args()
     if not os.path.exists(args.input_dir):
         raise FileNotFoundError(f"Input directory '{args.input_dir}' does not exist.")
