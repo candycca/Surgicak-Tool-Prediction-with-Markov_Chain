@@ -1,0 +1,14 @@
+.DS_Store
+.venv/
+.ultralytics/
+__pycache__/
+results/
+visualized/
+*dataset/
+test/
+.vscode/
+*.log
+*.mp4
+*.mov
+*.avi
+*.mkv
