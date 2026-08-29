@@ -13,10 +13,11 @@ def load_list(file_path):
     list_data = []
     df = (pd.read_excel(file_path, usecols = "D", header = None)).values.tolist()
     previous_label = None
-    for row in df[1:]:  # Start from the second row
+    for row in df:  # Start from the second row
         if (row[0] in states) and (row[0] != previous_label):  
             list_data.append(row[0])
             previous_label = row[0]  # Update previous_label
+    print(list_data)
     return list_data
 
 # Generate a Markov transition matrix from the video labels
